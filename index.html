@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main>
+        <div class="main-div">
+            <div class="music-player">
+                <nav>
+                    <div class="circle">
+                        <i class="fa-solid fa-angle-left"></i>
+                    </div>
+                    <div class="circle">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </nav>
+                <img src="./soulmate.jpg" alt="" class="song-img" id="logo">
+                <h1>Soulmate</h1>
+                <p>Arijit Singh,Badshah</p>
+
+                <audio id="song">
+                    <source src="./_Soulmate(PagalWorld.com.sb).mp3" type="audio/mpeg">
+                </audio>
+                <input type="range" value="0" id="progress">
+
+                <div class="controls">
+                    <div><i class="fa-solid fa-backward" id="pre-song"></i></div>
+                    <div onclick="playPause()"><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
+                    <div><i class="fa-solid fa-forward" id="nextsong"></i></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="https://kit.fontawesome.com/5f6e88bb43.js" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+</html>
