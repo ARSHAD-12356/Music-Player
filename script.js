@@ -4,6 +4,8 @@ let ctrlIcon = document.getElementById("ctrlIcon")
 let forwradbtn = document.getElementById("nextsong");
 let backwardbtn = document.getElementById("pre-song");
 let songimg = document.getElementById("logo");
+let songname = document.getElementById("name");
+let artist = document.getElementById("art");
 
 song.onloadedmetadata = function () {
     progress.max = song.duration;
@@ -38,13 +40,17 @@ progress.onchange = function () {
 forwradbtn.addEventListener("click",()=>{
     song.src = "./Saware(PaglaSongs).mp3"
     songimg.src = "./sawre.jpg"
+    songname.innerText = "Saware";
+    artist.innerText = "Arijit Singh";
     song.play();
     ctrlIcon.classList.add("fa-pause");
     ctrlIcon.classList.remove("fa-play");
 })
 backwardbtn.addEventListener("click",()=>{
     song.src = "./_Soulmate(PagalWorld.com.sb).mp3"
-    songimg.src = "./soulmate.jpg"
+    songimg.src = "./soulmate.jpg";
+    songname.innerText = "Soulmate";
+    artist.innerText = "Arijit Singh,Badshah";
     song.play();
     ctrlIcon.classList.add("fa-pause");
     ctrlIcon.classList.remove("fa-play");
